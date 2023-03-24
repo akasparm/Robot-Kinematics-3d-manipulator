@@ -33,5 +33,3 @@
 		Enter time(seconds):4317
 		Enter steering angle(alpha in degree):39
 		Enter rotational speed omega(rad/s):7.9
-
-	The output for both of the examples are displayed in 'results' folder.
