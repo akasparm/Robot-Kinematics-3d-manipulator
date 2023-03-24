@@ -1,35 +1,18 @@
-# Rear wheel drive modelling:
+# Robot kinematics 3d manipulator:
 
-	The equations for x, y and Φ are derived and showed in the shared pdf file. Those equations are used for plotting the graph using python program.
+	The equations for Θ1_dot, Θ2_dot and Θ3_dot are derived and showed in the shared pdf file. 
 
-###	How to run the code:
-		The code requires following libraries to be installed before running: math, matplotlib
+	According to those equations, Jacobian inverse is supposed to be finded out for the final calculations.
 
-###	Steps:
-		1. Input the values of intial positions.
-		2. Enter the value of time.
-		3. Enter the value of steering angle(alpha).
-		4. Enter the drive speed omega.
+	The Jacobian inverse is calculated using Python SymPy library. Also, required symbols are defined for the same.
+
+### How to run the code:
+		The code requires following libraries to be installed before running: sympy
+
+	This code does not need any input.
 
 ###	Output:
-		1. In the terminal window, the final position of the vehicle has been displayed(x, y, Φ).
-			Note: The Φ value is in degree.
-		2. In the popped up window, the plot for x coordinate versus y coordinate has been displayed.
+		In the terminal window,
+		1. The Jacobian inverse matrix is shown.
+		2. The values for Θ1_dot, Θ2_dot and Θ3_dot are shown.
 
-###	Examples from terminal window are given below:
-
-###	Example-1:
-		Enter initial x coordinate:-12
-		Enter initial y coordinate:45
-		Enter initial orientation(Φ in degree):42
-		Enter time(seconds):2300
-		Enter steering angle(alpha in degree):53
-		Enter rotational speed omega(rad/s):4.2
-
-###	Example-2:
-		Enter initial x coordinate:-500
-		Enter initial y coordinate:237
-		Enter initial orientation(Φ in degree):-12
-		Enter time(seconds):4317
-		Enter steering angle(alpha in degree):39
-		Enter rotational speed omega(rad/s):7.9
